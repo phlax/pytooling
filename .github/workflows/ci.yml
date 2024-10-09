@@ -31,7 +31,7 @@ jobs:
     - name: Run pants test
       run: "./pants --colors test ::"
     - name: Archive code coverage results
-      uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808  # v4.3.3
+      uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882  # v4.4.3
       with:
         name: coverage
         path: dist/coverage/python/htmlcov/
@@ -111,7 +111,7 @@ jobs:
     - name: Run pants package
       run: "./pants --colors package ::"
     - name: Archive created packages
-      uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808  # v4.3.3
+      uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882  # v4.4.3
       with:
         name: packages
         path: dist
